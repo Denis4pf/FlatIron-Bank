@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Denis4pf.github.io/FlatIron-Bank",
   "name": "react-hooks-bank-of-flatiron-code-challenge",
   "version": "0.1.0",
   "private": true,
@@ -9,9 +10,12 @@
     "semantic-ui-css": "^2.2.10"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "json-server": "^0.15.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "PORT=8000 react-scripts start",
     "server": "json-server --watch db.json -p 8001"
   },
